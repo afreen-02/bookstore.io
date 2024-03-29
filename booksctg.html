@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog</title>
+    <link rel="stylesheet" href="booksctg.css">
+
+</head>
+<body>
+
+<nav>
+    <h1>Book Catalog</h1>
+    <ul>
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="booksctg.html">Catalog</a></li>
+        <li><a href="userprofile.html">User Profile</a></li>
+        <li id="cartIcon" class="cart-icon">&#128722;Shopping cart</li>
+    </ul>
+</nav>
+<div class="books">
+<div class="book">
+    <h2> Control systems nagoor kani
+        14 September 2018</h2>
+    <img src="1.jpg" alt="Book 1 Image">
+    <p> M.R.P: ₹595 (15% off) <br>
+        FREE delivery Tuesday<br>
+        Or fastest delivery Monday<br>
+        More Buying Choices<br>
+        ₹500(12 new offers)<br>
+        </p>
+    <p>Price: ₹<span id="book1Price">504</span></p>
+    <button onclick="addToCart(504, 'Book 1', 'book1.jpg')">Add to Cart</button>
+</div>
+
+<div class="book">
+    <h2>Lateral entry to engineering degree</h2>
+    <img src="2.jpg" alt="Book 2 Image">
+    <p>M.R.P: ₹250 (2% off)
+        Delivery Thursday</p>
+    <p>Price: ₹<span id="book2Price">245</span></p>
+    <button onclick="addToCart(245, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>English - Language Context and Culture - For B Tech First Year JNTUH
+    </h2>
+    <img src="3.jpg" alt="Book 2 Image">
+    <p> M.R.P: ₹250 (2% off)
+        Delivery Thursday
+        </p>
+    <p>Price: ₹<span id="book2Price">245</span></p>
+    <button onclick="addToCart(245, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>Design And Analysis of Algorithms</h2>
+    <img src="4.jpg" alt="Book 2 Image">
+    <p>
+        M.R.P: ₹129 (15% off)
+        Delivery Thursday
+        </p>
+    <p>Price: ₹<span id="book2Price">110</span></p>
+    <button onclick="addToCart(110, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>Network Analysis And Synthesis </h2>
+    <img src="5.jpg" alt="Book 2 Image">
+    <p>M.R.P: ₹199 (15% off)
+        Delivery Thursday
+        </p>
+    <p>Price: ₹<span id="book2Price">169</span></p>
+    <button onclick="addToCart(169, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>Introduction to IOT B.Tech II-Year I-Sem JNTU-HYD (R22)</h2>
+    <img src="6.jpg" alt="Book 2 Image">
+    <p>Description of Book 2</p>
+    <p>Price: ₹<span id="book2Price">112</span></p>
+    <button onclick="addToCart(112, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>OPERATING SYSTEMS (Third Year (T.Y.) B. Tech )</h2>
+    <img src="7.jpg" alt="Book 2 Image">
+    <p>M.R.P: ₹129 (15% off)
+        Delivery Thursday</p>
+    <p>Price: ₹<span id="book2Price">110</span></p>
+    <button onclick="addToCart(110, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>WEB DEVELOPMENT (Third Year (T.Y.) B. Tech Course In AI & ML, AI & DS)</h2>
+    <img src="8.jpg" alt="Book 2 Image">
+    <p>₹290
+        Delivery Friday</p>
+    <p>Price: ₹<span id="book2Price">290</span></p>
+    <button onclick="addToCart(290, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>Raspberry Pi 3 & Hacking: 2 Books in 1: THE BLUEPRINT: Everything You Need To Know (Cyberpunk Blueprint)
+    </h2>
+    <img src="9.jpg" alt="Book 2 Image">
+    <p>₹2,275 M.R.P: ₹2,844 (20% off)
+        FREE delivery 19 - 20 Apr
+        More Buying Choices ₹1,891(3 new offers)
+     </p>
+    <p>Price: ₹<span id="book2Price">1891</span></p>
+    <button onclick="addToCart(1891, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+<div class="book">
+    <h2>
+        Caed Computer Aided Engineering Drawing</h2>
+    <img src="10.jpg" alt="Book 2 Image">
+    <p>₹334
+        FREE delivery Thursday on ₹499 of items fulfilled by Amazon
+        Only 1 left in stock.
+        </p>
+    <p>Price: ₹<span id="book2Price">334</span></p>
+    <button onclick="addToCart(499, 'Book 2', 'book2.jpg')">Add to Cart</button>
+</div>
+
+<div id="cartSection" class="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <p>Total: ₹<span id="totalAmount">0</span></p>
+    <a href="payment.html"><button onclick="checkout()">Proceed to Payment</button></a>
+</div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div>
+</footer>
+<script src="booksctg.js"></script>
+</body>
+</html>
